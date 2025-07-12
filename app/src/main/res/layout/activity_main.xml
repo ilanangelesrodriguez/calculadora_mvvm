@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:weightSum="3.3">
+
+        <!-- Display Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tv_expression"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="end"
+                android:text=""
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="48sp"
+                android:autoSizeMinTextSize="24sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="end"
+                android:maxLines="2"
+                android:text="0"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="48sp" />
+
+        </LinearLayout>
+
+
+        <!-- Main Calculator Grid -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:fillViewport="true"
+            android:overScrollMode="always">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="7"
+                android:padding="8dp"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
+
+                <!-- Row 1 -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_clear_entry"
+                    style="@style/CalculatorButton.Function"
+                    android:text="CE"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_clear"
+                    style="@style/CalculatorButton.Function"
+                    android:text="C"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_delete"
+                    style="@style/CalculatorButton.Function"
+                    android:layout_columnWeight="1"
+                    app:icon="@drawable/ic_backspace"
+                    app:iconSize="24dp"
+                    android:layout_gravity="fill"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_equals"
+                    style="@style/CalculatorButton.Equals"
+                    android:text="=" />
+
+                <!-- Row 2 -->
+
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_divide"
+                    style="@style/CalculatorButton.Operator"
+                    android:text="÷" />
+
+                <!-- Row 3 -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_7"
+                    style="@style/CalculatorButton.Number"
+                    android:text="7" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_8"
+                    style="@style/CalculatorButton.Number"
+                    android:text="8" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_9"
+                    style="@style/CalculatorButton.Number"
+                    android:text="9" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_multiply"
+                    style="@style/CalculatorButton.Operator"
+                    android:text="×" />
+
+                <!-- Row 4 -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_4"
+                    style="@style/CalculatorButton.Number"
+                    android:text="4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_5"
+                    style="@style/CalculatorButton.Number"
+                    android:text="5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_6"
+                    style="@style/CalculatorButton.Number"
+                    android:text="6" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_subtract"
+                    style="@style/CalculatorButton.Operator"
+                    android:text="-" />
+
+                <!-- Row 5 -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_1"
+                    style="@style/CalculatorButton.Number"
+                    android:text="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_2"
+                    style="@style/CalculatorButton.Number"
+                    android:text="2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_3"
+                    style="@style/CalculatorButton.Number"
+                    android:text="3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add"
+                    style="@style/CalculatorButton.Operator"
+                    android:text="+" />
+
+                <!-- Row 6 -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_plus_minus"
+                    style="@style/CalculatorButton.Number"
+                    android:text="±"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_0"
+                    style="@style/CalculatorButton.Number"
+                    android:text="0"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_decimal"
+                    style="@style/CalculatorButton.Number"
+                    android:text="." />
+
+
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- History Bottom Sheet -->
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="?attr/colorSurface"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_peekHeight="0dp"
+        app:behavior_hideable="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="History"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_clear_history"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear All" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_history"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/tv_history_empty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="No calculations yet"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

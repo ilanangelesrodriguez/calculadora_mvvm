@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Calculator Button Style -->
+
+    <!-- Number Button Style -->
+    <style name="CalculatorButton">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="CalculatorButton.Number">
+        <item name="backgroundTint">?attr/colorSurfaceVariant</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Operator Button Style -->
+    <style name="CalculatorButton.Operator">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="rippleColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <!-- Function Button Style -->
+    <style name="CalculatorButton.Function">
+        <item name="backgroundTint">?attr/colorSecondaryContainer</item>
+        <item name="android:textColor">?attr/colorOnSecondaryContainer</item>
+        <item name="rippleColor">?attr/colorSecondary</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- Equals Button Style -->
+    <style name="CalculatorButton.Equals">
+        <item name="backgroundTint">?attr/colorTertiary</item>
+        <item name="android:textColor">?attr/colorOnTertiary</item>
+        <item name="rippleColor">?attr/colorOnTertiary</item>
+    </style>
+
+    <!-- Scientific Button Style -->
+    <style name="CalculatorButton.Scientific">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">?attr/colorTertiaryContainer</item>
+        <item name="android:textColor">?attr/colorOnTertiaryContainer</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Memory Button Style -->
+    <style name="CalculatorButton.Memory">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">?attr/colorErrorContainer</item>
+        <item name="android:textColor">?attr/colorOnErrorContainer</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+</resources>
