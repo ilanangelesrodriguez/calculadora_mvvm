@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Scientific Calculator Pro</string>
+    
+    <!-- Button Labels -->
+    <string name="btn_clear">C</string>
+    <string name="btn_clear_entry">CE</string>
+    <string name="btn_delete">⌫</string>
+    <string name="btn_equals">=</string>
+    <string name="btn_decimal">.</string>
+    <string name="btn_plus_minus">±</string>
+    
+    <!-- Operators -->
+    <string name="btn_add">+</string>
+    <string name="btn_subtract">-</string>
+    <string name="btn_multiply">×</string>
+    <string name="btn_divide">÷</string>
+    <string name="btn_power">x^y</string>
+    <string name="btn_sqrt">√</string>
+    <string name="btn_square">x²</string>
+    <string name="btn_cube">x³</string>
+    <string name="btn_reciprocal">1/x</string>
+    <string name="btn_factorial">x!</string>
+    
+    <!-- Scientific Functions -->
+    <string name="btn_sin">sin</string>
+    <string name="btn_cos">cos</string>
+    <string name="btn_tan">tan</string>
+    <string name="btn_asin">asin</string>
+    <string name="btn_acos">acos</string>
+    <string name="btn_atan">atan</string>
+    <string name="btn_log">log</string>
+    <string name="btn_ln">ln</string>
+    <string name="btn_pi">π</string>
+    <string name="btn_e">e</string>
+    
+    <!-- Memory Functions -->
+    <string name="btn_memory_clear">MC</string>
+    <string name="btn_memory_recall">MR</string>
+    <string name="btn_memory_add">M+</string>
+    <string name="btn_memory_subtract">M-</string>
+    <string name="btn_memory_store">MS</string>
+    
+    <!-- Mode Toggles -->
+    <string name="btn_scientific">Scientific</string>
+    <string name="btn_basic">Basic</string>
+    <string name="btn_degree">DEG</string>
+    <string name="btn_radian">RAD</string>
+    
+    <!-- History -->
+    <string name="history_title">History</string>
+    <string name="history_clear_all">Clear All</string>
+    <string name="history_empty">No calculations yet</string>
+    
+    <!-- Error Messages -->
+    <string name="error_division_by_zero">Cannot divide by zero</string>
+    <string name="error_invalid_input">Invalid input</string>
+    <string name="error_math_error">Math error</string>
+    <string name="error_overflow">Number too large</string>
+    
+    <!-- Content Descriptions -->
+    <string name="cd_memory_indicator">Memory indicator</string>
+    <string name="cd_history_button">History</string>
+    <string name="cd_theme_button">Toggle theme</string>
+    <string name="cd_delete_button">Delete</string>
+</resources>
